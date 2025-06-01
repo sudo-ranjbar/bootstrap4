@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Project6 Bootstrap</title>
+</head>
+
+<body>
+
+
+
+  <section id="coming">
+
+    <div class="container-fluid p-0">
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-7 text-center text-white align-self-center py-5">
+
+          <div class="d-flex justify-content-center mb-5">
+
+            <div class="borderCounter d-flex flex-column justify-content-center">
+
+              <h2 class="font-weight-bold" id="day"></h2>
+              <h5>روز</h5>
+
+            </div>
+
+            <div class="borderCounter d-flex flex-column justify-content-center mr-5">
+
+              <h2 class="font-weight-bold" id="hours"></h2>
+                <h5>ساعت</h5>
+
+            </div>
+
+          </div>
+
+          <div class="d-flex justify-content-center">
+
+            <div class="borderCounter d-flex flex-column justify-content-center ">
+
+              <h2 class="font-weight-bold" id="min"></h2>
+              <h5>دقیقه</h5>
+
+            </div>
+
+            <div class="borderCounter d-flex flex-column justify-content-center mr-5">
+
+              <h2 class="font-weight-bold" id="sec"></h2>
+              <h5>ثانیه</h5>
+
+            </div>
+
+          </div>
+
+        </div>
+  
+
+
+        <div class="col-lg-5 bg-white p-5 text-center">
+
+          <h2 class="text-left font-weight-bold">
+            <span class="text-success">WEBPROG</span> .ir
+          </h2>
+
+          <p class="py-5 text-right">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+            در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+            نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+          </p>
+
+          <form>
+
+            <!-- <div class="form-group"> -->
+              <input type="name" class="form-control form-control-lg" placeholder="نام ..." />
+            <!-- </div> -->
+
+            <!-- <div class="form-group"> -->
+              <input type="email" class="form-control form-control-lg my-3" placeholder="ایمیل ..." />
+            <!-- </div> -->
+
+            <button type="submit" class="btn btn-success btn-lg btn-block">
+              ارسال
+            </button>
+
+          </form>
+
+          <div class="py-5 my-5">
+
+            <a href="#" class="mx-2">
+              <i class="fab fa-twitter fa-2x text-success"></i>
+            </a>
+
+            <a href="#" class="mx-2">
+              <i class="fab fa-facebook-f fa-2x text-success"></i>
+            </a>
+
+            <a href="#" class="mx-2">
+              <i class="fab fa-github fa-2x text-success"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous">
+    </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous">
+    </script>
+
+  
+
+  <script>
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("Juli 9, 2019 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("day").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("min").innerHTML = minutes;
+      document.getElementById("sec").innerHTML = seconds;
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        console.log("EXPIRED");
+      }
+    }, 1000);
+
+
+  </script>
+</body>
+
+</html>

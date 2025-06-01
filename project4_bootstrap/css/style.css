@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+body {
+  direction: rtl;
+  text-align: right !important;
+  font-family: "Vazir" !important;
+  line-height: 1.6;
+}
+
+.carousel-image-1 {
+  background: url("../img/slider1.jpg") center center/cover;
+}
+.carousel-image-2 {
+  background: url("../img/slider2.jpg") center center/cover;
+}
+.carousel-image-3 {
+  background: url("../img/slider3.jpg") center center/cover;
+}
+
+#overlay {
+  background: linear-gradient(-71deg, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.5) 50% ,transparent 50%),
+    url(../img/bg2.jpg) no-repeat center center/cover;
+}
+
+
+#video {
+  background: linear-gradient(105deg ,rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.5) 50% , transparent 50%),
+    url(../img/bg2.jpg) no-repeat center center/cover;
+}
+
+
+.ekko-lightbox-nav-overlay a:last-child span {
+  text-align: left !important;
+}
